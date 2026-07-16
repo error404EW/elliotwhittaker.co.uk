@@ -322,4 +322,74 @@ footer {
         flex-direction: column;
         gap: 0.5rem;
     }
+    
+}
+
+.timeline {
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    padding: 2.3rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.timeline-date,
+.role-date {
+    margin-top: 0;
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.timeline-title,
+.organisation {
+    margin-top: -0.3rem;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.volunteering-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.volunteering-card {
+    padding: 2.2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.volunteering-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    nav {
+        gap: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+    }
+
+    .volunteering-grid {
+        grid-template-columns: 1fr;
+    }
 }
