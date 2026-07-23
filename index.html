@@ -17,14 +17,17 @@
 <body>
     <header class="site-header">
         <div class="container nav-container">
-            <a href="#home" class="logo">EW</a>
-
+            <a href="#home" class="logo" aria-label="Elliot Whittaker homepage">
+                EW
+            </a>
+    
             <nav aria-label="Main navigation">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
                 <a href="#volunteering">Volunteering</a>
+                <a href="blog.html">Blog</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -313,7 +316,71 @@
             </div>
         </section>
 
-        <section class="section alternate-section" id="education">
+
+        <section class="section alternate-section" id="blog">
+            <div class="container">
+                <div class="section-heading-row">
+                    <div>
+                        <p class="section-label">Blog</p>
+                        <h2>Cyber security insights</h2>
+        
+                        <p class="section-introduction">
+                            Articles exploring cyber security, operational technology,
+                            secure architecture, risk management and professional
+                            development.
+                        </p>
+                    </div>
+        
+                    <a href="blog.html" class="button secondary-button">
+                        View all articles
+                    </a>
+                </div>
+        
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <p class="blog-meta">
+                            Operational Technology · 23 July 2026
+                        </p>
+        
+                        <h3>
+                            <a href="blog/understanding-ot-security.html">
+                                Why operational technology security requires a
+                                different approach
+                            </a>
+                        </h3>
+        
+                        <p>
+                            Exploring why safety, resilience and predictable operation
+                            change how security risks must be assessed in operational
+                            environments.
+                        </p>
+        
+                        <a
+                            href="blog/understanding-ot-security.html"
+                            class="text-link"
+                        >
+                            Read article
+                        </a>
+                    </article>
+        
+                    <article class="blog-card">
+                        <p class="blog-meta">
+                            More articles coming soon
+                        </p>
+        
+                        <h3>Further writing in development</h3>
+        
+                        <p>
+                            Future articles will cover secure architecture, cyber risk,
+                            critical systems and lessons from practical security
+                            projects.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+       
+        <section class="section" id="education">
             <div class="container">
                 <p class="section-label">Education</p>
                 <h2>Academic development</h2>
